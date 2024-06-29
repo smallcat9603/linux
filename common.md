@@ -1,4 +1,4 @@
-# Basics
+# Basic
 ```shell
 lsblk # tree
 lsblk -l # list
