@@ -45,7 +45,9 @@ chgrp [用户组] [文件或目录]
 umask 
 ```
 
-# -uname -a
+# Output
+
+## -uname -a
 ```shell
 smallcat at yaos-MacBook-Air.local in ~$uname -a
 Darwin yaos-MacBook-Air.local 22.6.0 Darwin Kernel Version 22.6.0: Mon Apr 22 20:50:39 PDT 2024; root:xnu-8796.141.3.705.2~1/RELEASE_ARM64_T8103 arm64
@@ -68,7 +70,7 @@ x86_64 更适合桌面和服务器环境，具有较高的功耗和性能。
 aarch64 更适合移动和嵌入式设备，注重低功耗和高效能，逐步进入高性能计算市场。
 ```
 
-# grep -c processor /proc/cpuinfo
+## grep -c processor /proc/cpuinfo
 ```shell
 smallcat@7be20bc9d22d:/$ grep -c processor /proc/cpuinfo
 8
@@ -83,7 +85,7 @@ smallcat@raspberrypi2:~ $ grep -c processor /proc/cpuinfo
 112
 ```
 
-# grep Mem /proc/meminfo
+## grep Mem /proc/meminfo
 ```shell
 smallcat@7be20bc9d22d:/$ grep Mem /proc/meminfo
 MemTotal:       12249876 kB
@@ -106,7 +108,7 @@ MemFree:        150251624 kB
 MemAvailable:   287814728 kB
 ```
 
-# sar -P 0 1 1
+## sar -P 0 1 1
 ```shell
 smallcat@7be20bc9d22d:/$ sar -P 0 1 1
 Linux 5.10.104-linuxkit (7be20bc9d22d) 	06/25/24 	_aarch64_	(8 CPU)
@@ -123,7 +125,7 @@ Linux 4.18.0-372.9.1.el8.x86_64 (wisteria04) 	06/25/2024 	_x86_64_	(112 CPU)
 Average:          0      0.00      0.00      4.00      0.00      0.00     96.00
 ```
 
-# sar -r 1 5
+## sar -r 1 5
 ```shell
 smallcat@7be20bc9d22d:/$ sar -r 1 5
 Linux 5.10.104-linuxkit (7be20bc9d22d) 	06/25/24 	_aarch64_	(8 CPU)
@@ -148,7 +150,7 @@ Linux 4.18.0-372.9.1.el8.x86_64 (wisteria04) 	06/25/2024 	_x86_64_	(112 CPU)
 Average:    183262904 244077332 211240444     53.55     75720  57918310  49406363     11.58  31053889  58813464     24025
 ```
 
-# ldd /usr/bin/python3
+## ldd /usr/bin/python3
 ```shell
 smallcat@7be20bc9d22d:/$ ldd /usr/bin/python3
 	linux-vdso.so.1 (0x0000ffff9f226000)
